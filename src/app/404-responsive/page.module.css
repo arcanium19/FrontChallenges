@@ -1,0 +1,135 @@
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace;
+*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: white;
+    align-items: center;
+}
+
+.title{
+    margin-top: 2vw;
+    width: 90%;
+    height: 10vh;
+}
+
+.title h3{
+    color: #333;
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: fit-content;
+    min-height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .svg404{
+    width: 40%;
+    height: auto;
+    min-width: 300px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: fit-content;
+    min-width: 300px;
+}
+
+.textContainer h1{
+    color: #333;
+    font-family: 'Space Mono', monospace; 
+    font-size: calc(80vw - 76vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.24px;
+    margin-bottom: 5vh;
+}
+
+.textContainer h4{
+    color: #4F4F4F;
+    font-family: 'Space Mono', monospace; 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.84px;
+    margin-bottom: 5vh;
+}
+
+.btn{
+    width: 216px;
+    height: 68px;
+    border: none;
+    background-color: #333;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.49px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 1px 1px 8px black;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    bottom: 3vh;
+}
+
+.footer p{
+    color: #BDBDBD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media(max-width: 600px){
+    .title{
+        margin-top: 5vw;
+    }
+    .textContainer{
+        justify-content: center;
+    }
+    .textContainer h1{
+        font-size: calc(30px + 2vw);
+    }
+    .textContainer h4{
+        font-size: calc(12px + 2vw);
+    }
+    .footer p{
+        font-size: calc(80vw - 77vw);
+    }
+}
