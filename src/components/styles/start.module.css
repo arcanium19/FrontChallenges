@@ -1,0 +1,67 @@
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace;
+*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-snap-align: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    /* background-color: bisque; */
+}
+
+.left h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left h3{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(35, 33, 146);
+}
+
+.logo{
+    width: 30%;
+    height: auto;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    /* background-color: rgb(35, 33, 146); */
+}
+
+.artWork{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+}
